@@ -1,0 +1,150 @@
+.score-box {
+  border-right: 1px solid #aaa;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+
+  &:last-child {
+    border-right: none;
+    .next-match-date {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      font-size: 14px;
+      text-shadow: 1px 2px 4px #000000;
+      padding-bottom: 5px;
+      padding-left: 10px;
+    }
+    .result-container {
+      padding-top: 0;
+    }
+    .competition-container {
+      padding-bottom: 22px;
+    }
+  }
+  .next-match-date {
+    display: none;
+  }
+
+  .result-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 14px;
+    margin-top: 5px; //!777777777777777
+
+    .score-container {
+      //background: rgba(198, 53, 39, 0.85);
+      font-size: 20px;
+      text-shadow: 1px 2px 4px #000000;
+    }
+  }
+  .competition-container {
+    //background: rgba(255, 255, 255, 0.1);
+    //border-radius: 10px;
+    display: flex;
+    padding-bottom: 0px;
+    height: 100%;
+
+    .competition-image {
+      width: 60px;
+      height: 60px;
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .score-box {
+    &:last-child {
+      .next-match-date {
+        font-size: 12px;
+      }
+      .competition-container {
+        padding-bottom: 30px;
+      }
+    }
+    .result-container {
+      .team-logo {
+        width: 60px;
+        height: 60px;
+      }
+      .score-container {
+        font-size: 18px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .score-box {
+    &:first-child {
+      display: none;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .score-box {
+    width: 32%;
+    margin-bottom: 23px;
+    &:last-child {
+      width: 36%;
+      .next-match-date {
+        font-size: 11.5px;
+        padding-left: 1px;
+      }
+      .competition-container {
+        padding-bottom: 34px;
+      }
+    }
+    .result-container {
+      .team-logo {
+        width: 50px;
+        height: 50px;
+      }
+      .score-container {
+        font-size: 16px;
+      }
+    }
+
+    .competition-container {
+      padding-bottom: 20px;
+      .competition-image {
+        width: 50px;
+        height: 50px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 450px) {
+  .score-box {
+    width: 30%;
+    &:last-child {
+      width: 40%;
+      .next-match-date {
+        font-size: 10px;
+        padding-left: 5px;
+      }
+      .competition-container {
+        padding-bottom: 24px;
+      }
+    }
+    .result-container {
+      padding-top: 14px;
+      .team-logo {
+        width: 37px;
+        height: 37px;
+      }
+      .score-container {
+        font-size: 14px;
+      }
+    }
+
+    .competition-container {
+      .competition-image {
+        width: 45px;
+        height: 45px;
+      }
+    }
+  }
+}

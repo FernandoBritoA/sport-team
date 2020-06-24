@@ -1,0 +1,56 @@
+$sub-color: grey;
+$main-color: black;
+//scss we can use these values anywhere in the file
+
+@mixin shrinkLabel {
+  top: -14px; //move it up
+  font-size: 12px; //change fontsize
+  color: var(--primary-color); //change color
+} //include this whole block everywhere we say @include shrinkLabel()
+
+.group {
+  position: relative;
+  margin: 45px 0;
+  width: 95%;
+
+  .form-input {
+    background: none;
+    background-color: white;
+    color: $sub-color;
+    font-size: 18px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid $sub-color;
+    margin: 25px 0;
+
+    &:focus {
+      outline: none;
+    }
+
+    &:focus ~ .form-input-label {
+      @include shrinkLabel();
+    } //whenever the user selects or focus on these
+  }
+
+  input[type='password'] {
+    letter-spacing: 0.3em; //case password, letters spread a bit
+  }
+
+  .form-input-label {
+    color: $sub-color;
+    font-size: 16px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 5px;
+    top: 10px;
+    transition: 300ms ease all;
+
+    &.shrink {
+      @include shrinkLabel();
+    }
+  }
+}

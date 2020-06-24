@@ -1,0 +1,94 @@
+.footer {
+  background: linear-gradient(89deg, #c63527 30%, #2c325f 70%);
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: absolute;
+  bottom: 0;
+
+  .my-info-container {
+    width: 25%;
+    margin: 0;
+    margin-right: 30px;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    .peronal-info {
+      text-align: center;
+      width: 40%;
+      margin: 6px 0;
+      color: white;
+      line-height: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-right: 1px solid white;
+
+      .info-text {
+        margin: 0;
+        font-size: 12px;
+
+        &.my-name {
+          font-size: 16px;
+        }
+      }
+    }
+    .a-tags {
+      width: 60%;
+      margin: 0;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .icon {
+        &:hover {
+          color: #43aeae;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .footer {
+    .my-info-container {
+      width: 35%;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .footer {
+    .my-info-container {
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .footer {
+    .my-info-container {
+      margin-right: 10px;
+      width: 55%;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    .my-info-container {
+      width: 70%;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .footer {
+    height: 58px;
+    .my-info-container {
+      width: 80%;
+    }
+  }
+}

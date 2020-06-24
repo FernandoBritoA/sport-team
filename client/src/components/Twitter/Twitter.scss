@@ -1,0 +1,27 @@
+.twitter {
+  border-top: 2.3px solid #c63527;
+  border-bottom: 1px solid #afb6bc;
+  padding-bottom: 10px;
+  width: 400px;
+}
+@media screen and (max-width: 1000px) {
+  .twitter {
+    width: 600px;
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .twitter {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .twitter {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .twitter {
+    width: 320px;
+  }
+}

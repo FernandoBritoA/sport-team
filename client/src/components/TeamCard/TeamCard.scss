@@ -1,0 +1,191 @@
+@font-face {
+  font-family: 'Metro Regular';
+  src: url('./e66e06f08b860d83c38e6579c46e5ee1.eot'); /* IE9*/
+  src: url('./e66e06f08b860d83c38e6579c46e5ee1.eot?#iefix')
+      format('embedded-opentype'),
+    /* IE6-IE8 */ url('e66e06f08b860d83c38e6579c46e5ee1.woff2') format('woff2'),
+    /* chrome、firefox */ url('./e66e06f08b860d83c38e6579c46e5ee1.woff')
+      format('woff'),
+    /* chrome、firefox */ url('./e66e06f08b860d83c38e6579c46e5ee1.ttf')
+      format('truetype'),
+    /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+      url('./e66e06f08b860d83c38e6579c46e5ee1.svg#Metro Regular') format('svg'); /* iOS 4.1- */
+}
+
+.flip-card {
+  width: 28%;
+  height: 300px;
+  margin-bottom: 15px;
+
+  &:hover {
+    cursor: pointer;
+    .flip-card-inner {
+      transform: rotateY(180deg);
+    }
+  }
+
+  .flip-card-inner {
+    box-shadow: 5px 5px 5px grey;
+    border: 1.5px solid #afb6bc;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    .flip-card-front {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+
+      .top-shirt {
+        background-color: #c63527;
+        color: white;
+        height: 70%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Metro Regular', arial;
+        justify-content: center;
+        &.Goalkeeper {
+          background-color: black;
+        }
+
+        .shirt-name {
+          font-size: 28px;
+          text-transform: uppercase;
+          letter-spacing: 2px;
+        }
+        .shirt-number {
+          font-size: 140px;
+          letter-spacing: -5px;
+          text-indent: -5px;
+        }
+      }
+
+      .shirt-stripes {
+        height: 30%;
+        background: repeating-linear-gradient(
+          90deg,
+          #fff,
+          #fff 10%,
+          #c63527 10%,
+          #c63527 15%
+        );
+        &.Goalkeeper {
+          background: black;
+        }
+      }
+    }
+    .flip-card-back {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      -webkit-backface-visibility: hidden; /* Safari */
+      backface-visibility: hidden;
+      transform: rotateY(180deg);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(44, 50, 95, 0.89);
+      .player-image-container {
+        border: 2px solid #afb6bc;
+        width: 80%;
+        height: 55%;
+        border-radius: 10px;
+        overflow: hidden;
+
+        .player-image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      .player-info {
+        width: 80%;
+        height: 38%;
+        text-align: start;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        text-shadow: 1px 2px 4px #000000;
+
+        .base-info {
+          color: #afb6bc;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .flip-card {
+    width: 30%;
+    .flip-card-inner {
+      .flip-card-back {
+        .player-info {
+          font-size: 13.5px;
+          width: 94%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .flip-card {
+    width: 36%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .flip-card {
+    width: 44%;
+    height: 300px * 0.9;
+
+    .flip-card-inner {
+      .flip-card-front {
+        .top-shirt {
+          .shirt-number {
+            font-size: 140px * 0.9;
+            letter-spacing: -5px * 0.9;
+            text-indent: -5px * 0.9;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .flip-card {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .flip-card {
+    width: 70%;
+    height: 300px * 0.8;
+    .flip-card-inner {
+      .flip-card-front {
+        .top-shirt {
+          .shirt-name {
+            font-size: 28px * 0.8;
+            text-transform: uppercase;
+            letter-spacing: 2px * 0.8;
+          }
+          .shirt-number {
+            font-size: 140px * 0.8;
+            letter-spacing: -5px * 0.8;
+            text-indent: -5px * 0.8;
+          }
+        }
+      }
+    }
+  }
+}

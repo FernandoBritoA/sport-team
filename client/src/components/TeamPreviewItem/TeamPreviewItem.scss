@@ -1,0 +1,42 @@
+.team-preview-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+  padding-top: 5px;
+  border-bottom: 1px solid #afb6bc;
+  color: #2c325f;
+
+  .player-number {
+    width: 10%;
+    text-align: end;
+  }
+  .player-name {
+    width: 85%;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .team-preview-item {
+    width: 30%;
+    padding-bottom: 0;
+    height: 24px;
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .team-preview-item {
+    width: 45%;
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .team-preview-item {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .team-preview-item {
+    font-size: 14px;
+  }
+}

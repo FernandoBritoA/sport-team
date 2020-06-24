@@ -1,0 +1,161 @@
+.checkout-page {
+  width: 55%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px auto;
+
+  .checkout-header {
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    color: #393939;
+    border-bottom: 1px solid darkgrey;
+
+    .header-block {
+      text-transform: capitalize;
+      width: 14%;
+
+      &:first-child {
+        width: 18%;
+      }
+
+      &.description {
+        width: 46%;
+      }
+
+      &:last-child {
+        width: 8%;
+      }
+    }
+  }
+
+  .total {
+    margin-top: 30px;
+    margin-left: auto;
+    font-size: 32px;
+    color: #393939;
+  }
+
+  button {
+    margin-left: auto;
+    margin-top: 50px;
+  }
+
+  .test-warning {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 24px;
+    color: red;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .checkout-page {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .checkout-page {
+    .checkout-header {
+      justify-content: flex-start;
+      font-size: 15px;
+
+      .header-block {
+        text-transform: capitalize;
+        width: 15%;
+        padding-left: 5px;
+
+        &:first-child {
+          width: 18%;
+          padding-left: 0;
+        }
+
+        &.description {
+          width: 42%;
+          padding-left: 5px;
+        }
+
+        &:last-child {
+          width: 8%;
+          padding-left: 0;
+        }
+      }
+    }
+
+    .total {
+      font-size: 28px;
+    }
+
+    .test-warning {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .checkout-page {
+    width: 80%;
+    .checkout-header {
+      justify-content: flex-start;
+      font-size: 14px;
+      .header-block {
+        width: 19%;
+
+        &:first-child {
+          width: 18%;
+        }
+
+        &.description {
+          width: 36%;
+        }
+
+        &:last-child {
+          width: 8%;
+        }
+      }
+    }
+
+    .total {
+      margin-top: 20px;
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .checkout-page {
+    width: 85%;
+    .checkout-header {
+      font-size: 14px;
+      justify-content: flex-start;
+      .header-block {
+        width: 19%;
+        margin-left: 0;
+        padding-right: 10px;
+
+        &:first-child {
+          width: 18%;
+          padding-right: 0;
+        }
+
+        &.description {
+          width: 34%;
+          padding-left: 5px;
+          padding-right: 0;
+        }
+
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+
+    .total {
+      font-size: 24px;
+    }
+  }
+}

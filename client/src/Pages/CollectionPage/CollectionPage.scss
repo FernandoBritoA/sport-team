@@ -1,0 +1,135 @@
+.collection-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+
+  .button-title {
+    display: flex;
+    border-bottom: 1px solid var(--border-color);
+    width: 96%;
+    margin-bottom: 30px;
+    padding: 5px;
+
+    .title {
+      font-size: 38px;
+      color: #2c325f;
+      text-shadow: 1px 1px 1px var(--border-color);
+      text-align: center;
+      text-transform: uppercase;
+      margin: 0;
+      //width: 93%;
+      margin-right: 46.5%;
+      margin-left: auto;
+    }
+
+    .go-back-btn {
+      width: 7%;
+      background-color: #2c325f;
+      border: none;
+      color: white;
+      padding: 15px 24px;
+      text-align: center;
+      font-size: 16px;
+      border-radius: 4px;
+      box-shadow: 5px 0px 5px grey;
+      text-shadow: 1px 2px 5px #000000;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .go-back-btn:hover {
+      cursor: pointer;
+      background-color: #afb6bc;
+      color: #25282a;
+      text-shadow: 1px 2px 5px white;
+    }
+    .go-back-btn:focus {
+      background-color: #92daec;
+      color: #25282a;
+      border: none;
+      outline: none;
+      text-shadow: 1px 2px 5px white;
+    }
+  }
+
+  .subcollections {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .collection-page {
+    .button-title {
+      .title {
+        margin-right: 46.5%;
+        margin-left: auto;
+      }
+
+      .go-back-btn {
+        width: 9%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .collection-page {
+    .button-title {
+      .title {
+        margin-right: 40%;
+        margin-left: auto;
+      }
+
+      .go-back-btn {
+        width: 12%;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .collection-page {
+    .button-title {
+      .title {
+        margin-right: 35%;
+        margin-left: auto;
+      }
+
+      .go-back-btn {
+        width: 17%;
+
+        .go-back {
+          padding-left: 1px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .collection-page {
+    .button-title {
+      .title {
+        margin-right: 32%;
+        margin-left: auto;
+      }
+
+      .go-back-btn {
+        width: 8%;
+        font-size: 20px;
+        text-align: center;
+        padding: 10px 24px;
+        align-items: center;
+        justify-content: center;
+
+        .go-back {
+          display: none;
+        }
+      }
+    }
+  }
+}

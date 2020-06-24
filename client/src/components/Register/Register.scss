@@ -1,0 +1,46 @@
+.register {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  border: 1px solid grey;
+  box-shadow: 5px 5px 5px 5px grey;
+
+  .title {
+    margin: 10px 0;
+    color: var(--primary-color);
+  }
+
+  .subtitle {
+    color: grey;
+  }
+
+  .signin-footer {
+    text-align: center;
+    color: grey;
+    .signin-link {
+      color: var(--primary-color);
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .register {
+    width: 40vw;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .register {
+    width: 50vw;
+  }
+  .custom-button {
+    min-width: 100px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .register {
+    width: 80vw;
+  }
+}

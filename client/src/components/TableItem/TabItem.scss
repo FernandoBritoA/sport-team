@@ -1,0 +1,54 @@
+tbody {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  tr {
+    &.aliga {
+      background: rgb(16, 32, 40);
+    }
+    &.bliga {
+      background: rgb(72, 83, 88);
+    }
+    &.achampions {
+      background: linear-gradient(
+        89deg,
+        rgba(0, 0, 75, 1) 55%,
+        rgba(0, 143, 204, 0.9) 100%
+      );
+      border-bottom: 1px solid rgba(204, 204, 204, 0.2);
+    }
+    &.bchampions {
+      background: linear-gradient(
+        89deg,
+        rgba(0, 0, 75, 1) 70%,
+        rgba(0, 143, 204, 0.9) 100%
+      );
+      border-bottom: 1px solid rgba(204, 204, 204, 0.2);
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+    .name {
+      padding-left: 10px;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  tbody {
+    .image {
+      width: 30px * 0.8;
+      height: 30px * 0.8;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  tbody {
+    .name {
+      display: none;
+    }
+    .image {
+      width: 30px * 0.9;
+      height: 30px * 0.9;
+      padding-left: 5px;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.card-sections {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .card-section-title {
+    width: 100%;
+    color: #2c325f;
+    border-bottom: 1px solid #afb6bc;
+  }
+
+  .team-cards-container {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+
+    .slides-overview {
+      width: 60%;
+    }
+    .position-image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 20%;
+
+      .playerInfo {
+        color: #2c325f;
+        width: 100%;
+        border-bottom: 1px solid #afb6bc;
+        margin-bottom: 10px;
+
+        h2 {
+          text-align: center;
+          border-bottom: 1px solid #afb6bc;
+        }
+        h3 {
+          font-size: 17px;
+          line-height: 0.8;
+        }
+        span {
+          font-size: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .card-sections {
+    .team-cards-container {
+      .position-image {
+        width: 24%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .card-sections {
+    .team-cards-container {
+      .position-image {
+        width: 26%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .card-sections {
+    .team-cards-container {
+      .position-image {
+        width: 30%;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .card-sections {
+    .team-cards-container {
+      .slides-overview {
+        width: 65%;
+      }
+      .position-image {
+        .playerInfo {
+          h2 {
+            font-size: 22px;
+          }
+          h3 {
+            font-size: 15px;
+          }
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,86 @@
+.team-preview {
+  width: 16%;
+  margin-left: 1%;
+
+  .position-selector {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: white;
+    background-color: #2c325f;
+    height: 34px;
+    position: relative;
+    outline: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    .option-selector {
+      font-size: 16px;
+      color: white;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .team-preview {
+    display: flex;
+    width: 90%;
+    margin-left: 0;
+    border-bottom: 1px solid #afb6bc;
+    margin-top: 1%;
+
+    .position-selector {
+      margin-right: 3%;
+    }
+    .players-list {
+      width: 90%;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 950px) {
+  .team-preview {
+    .position-selector {
+      font-size: 18px;
+      .option-selector {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .team-preview {
+    .position-selector {
+      font-size: 15px;
+      width: 100px;
+      margin-right: 1%;
+      .option-selector {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .team-preview {
+    flex-direction: column;
+    .position-selector {
+      font-size: 16px;
+      width: 125px;
+      margin-right: 1%;
+      margin-bottom: 2px;
+      .option-selector {
+        font-size: 12px;
+      }
+    }
+    .players-list {
+      width: 100%;
+    }
+  }
+}

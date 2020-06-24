@@ -1,0 +1,114 @@
+.navbar {
+  font-weight: bold;
+  height: 80px * 0.75;
+  background: linear-gradient(89deg, #c63527 30%, #2c325f 70%);
+  color: whitesmoke;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 0;
+  box-shadow: 5px 5px 5px grey;
+  text-shadow: 1px 2px 4px #000000;
+  //opacity: 0.95;
+
+  .logoname {
+    width: 30%;
+    font-size: 16px * 0.75;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+    }
+
+    .logo {
+      height: 70px * 0.75;
+      width: auto;
+      opacity: 0.9;
+    }
+  }
+  .options {
+    width: 70%;
+    font-size: 20px * 0.75;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    .option {
+      margin-right: 50px;
+      height: 100%;
+      outline: none;
+      &.adjust-margin {
+        margin-right: 20px;
+      }
+      &:hover {
+        transform: scale(1.1);
+        transition: transform 2s cubic-bezier(0.25, 0.45, 0.45, 0.95);
+        cursor: pointer;
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .navbar {
+    .logoname {
+      width: 50%;
+    }
+    .options {
+      width: 50%;
+    }
+  }
+}
+@media screen and (max-width: 800px) {
+  .navbar {
+    .logoname {
+      font-size: 12px;
+    }
+    .options {
+      font-size: 13px;
+
+      .option {
+        margin-right: 30px;
+      }
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .navbar {
+    .logoname {
+      font-size: 7px;
+      width: 23%;
+      .logo {
+        height: 50px;
+      }
+      .teamname {
+        text-align: center;
+        display: none;
+      }
+    }
+    .options {
+      font-size: 13px;
+      width: 50%;
+      .option {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .navbar {
+    .options {
+      width: 55%;
+      .option {
+        margin-right: 15px;
+
+        &.adjust-margin {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

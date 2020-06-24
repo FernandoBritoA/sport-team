@@ -1,0 +1,24 @@
+.alert-container {
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  .alert {
+    padding: 0.8rem;
+    opacity: 0.9;
+    z-index: 5;
+    width: 90%;
+    margin-bottom: 3px;
+    &.alert-danger {
+      background: var(--danger-color);
+      color: #fff;
+    }
+    &.alert-success {
+      background: var(--success-color);
+      color: #fff;
+    }
+  }
+}
